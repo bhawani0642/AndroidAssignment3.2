@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack"
+    tools:context="com.acadgild.creditcardhelper.MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFFFFF"
+        android:text="Enter Card Balance($)" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="150dp"
+        android:background="@color/colorSnow"
+        android:layout_height="wrap_content"
+        android:ems="10"
+
+        android:inputType="textPersonName"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="27dp"
+        android:text="Enter Yearly Interest Rate(%)"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/editText8" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/colorSnow"
+        android:layout_alignLeft="@+id/editText8"
+        android:layout_alignStart="@+id/editText8"
+        android:layout_alignBottom="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFF"
+        android:text="Enter Minimum Payment($)"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="150dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText9"
+        android:layout_alignStart="@+id/editText9"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/colorSnow"
+        android:layout_alignTop="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText10"
+        android:layout_marginTop="47dp"
+        android:textSize="20dp"
+        android:text="Final Card Balance($)"
+        android:textColor="@color/colorSnow"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/editText10"
+        android:layout_alignStart="@+id/editText10"
+        android:ems="10"
+        android:background="@color/colorSnow"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/editText10"
+        android:layout_alignEnd="@+id/editText10" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="29dp"
+        android:text="Months Remaining"
+        android:textColor="@color/colorSnow"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText11"
+        android:layout_alignStart="@+id/editText11"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignRight="@+id/editText11"
+        android:layout_alignEnd="@+id/editText11"
+        android:layout_alignBottom="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:text="Months Remaining"
+        android:textColor="@color/colorSnow"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText12"
+        android:layout_alignStart="@+id/editText12"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/colorSnow"
+        android:layout_alignRight="@+id/editText12"
+        android:layout_alignEnd="@+id/editText12"
+        android:layout_alignBottom="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="38dp"
+        android:text="Interest Paid will Be($)"
+        android:textColor="@color/colorSnow"
+        android:textSize="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/editText14"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText12"
+        android:layout_alignStart="@+id/editText12"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/colorSnow"
+        android:layout_alignRight="@+id/editText12"
+        android:layout_alignEnd="@+id/editText12"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignTop="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPUTE"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="CLEAR" />
+
+</RelativeLayout>
